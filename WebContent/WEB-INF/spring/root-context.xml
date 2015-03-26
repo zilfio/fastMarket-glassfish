@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+           http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+	<jee:local-slsb id="AddressService"
+		business-interface="it.univaq.mwt.fastmarket.business.AddressService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/AddressServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="BookingService"
+		business-interface="it.univaq.mwt.fastmarket.business.BookingService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/BookingServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="BrandService"
+		business-interface="it.univaq.mwt.fastmarket.business.BrandService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/BrandServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="CartLineService"
+		business-interface="it.univaq.mwt.fastmarket.business.CartLineService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/CartLineServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="CartService"
+		business-interface="it.univaq.mwt.fastmarket.business.CartService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/CartServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="CategoryService"
+		business-interface="it.univaq.mwt.fastmarket.business.CategoryService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/CategoryServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="DeliveryService"
+		business-interface="it.univaq.mwt.fastmarket.business.DeliveryService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/DeliveryServiceHibernate">
+	</jee:local-slsb>
+
+<jee:local-slsb id="DistrictService"
+		business-interface="it.univaq.mwt.fastmarket.business.DistrictService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/DistrictServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="ProductService"
+		business-interface="it.univaq.mwt.fastmarket.business.ProductService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/ProductServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="GroceryService"
+		business-interface="it.univaq.mwt.fastmarket.business.GroceryService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/GroceryServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="IntoleranceCategoryService"
+		business-interface="it.univaq.mwt.fastmarket.business.IntoleranceCategoryService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/IntoleranceCategoryServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="NonGroceriesService"
+		business-interface="it.univaq.mwt.fastmarket.business.NonGroceriesService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/NonGroceriesServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="ProvinceService"
+		business-interface="it.univaq.mwt.fastmarket.business.ProvinceService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/ProvinceServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="RegionService"
+		business-interface="it.univaq.mwt.fastmarket.business.RegionService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/RegionServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="RoleService"
+		business-interface="it.univaq.mwt.fastmarket.business.RoleService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/RoleServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="SystemInformationService"
+		business-interface="it.univaq.mwt.fastmarket.business.SystemInformationService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/SystemInformationServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="UserService"
+		business-interface="it.univaq.mwt.fastmarket.business.UserService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/UserServiceHibernate">
+	</jee:local-slsb>
+
+	<jee:local-slsb id="SecurityService"
+		business-interface="it.univaq.mwt.fastmarket.business.SecurityService"
+		jndi-name="java:global/fastMarket-ear/fastMarket-ejb/SecurityServiceHibernate">
+	</jee:local-slsb>
+	
+	<context:component-scan base-package="it.univaq.mwt.fastmarket.common"/>
+
+</beans>
